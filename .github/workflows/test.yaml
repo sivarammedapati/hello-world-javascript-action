@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Get input
       id: by
-      uses: ./actions/test-action
+      uses: ../actions/test-action
       with:
         who-to-greet: JDA
         wish-person: BlueYonder
