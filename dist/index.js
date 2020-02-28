@@ -126,8 +126,15 @@ function registerPlugin (plugins, pluginFunction) {
 const core = __webpack_require__(694);
 const github = __webpack_require__(136);
 
+const child_process = __webpack_require__(129);
+const fs = __webpack_require__(747);
+const process = __webpack_require__(765);
+
+const get_gha_input = (name) => { return process.env[`INPUT_${name.toUpperCase()}`]; };
+console.log(get_gha_input);
 try {
   // `who-to-greet` input defined in action metadata file
+  //console.log(process.env);
   const nameToGreet = core.getInput('who-to-greet');
   const wishPerson = core.getInput('wish-person')
   console.log(`Hello ${nameToGreet}!`);
@@ -8962,6 +8969,13 @@ module.exports = require("fs");
 /***/ (function(module) {
 
 module.exports = require("zlib");
+
+/***/ }),
+
+/***/ 765:
+/***/ (function(module) {
+
+module.exports = require("process");
 
 /***/ }),
 
