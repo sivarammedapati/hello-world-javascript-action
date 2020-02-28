@@ -12,8 +12,8 @@ jobs:
       with:
         who-to-greet: JDA
         wish-person: BlueYonder
-    - name: Print environment variables
-      uses: managedkaos/print-env@master
+    #- name: Print environment variables
+    #  uses: managedkaos/print-env@master
     - name: Get output
       run: |
         echo "Time is ${{ steps.by.outputs.time }}"
