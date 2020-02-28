@@ -8,6 +8,8 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we we greeted you'
+  outtwo:
+    description: 'second output'
 runs:
   using: 'node12'
   main: 'index.js'
