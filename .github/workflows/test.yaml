@@ -9,7 +9,7 @@ jobs:
     - name: Get input
       id: by
       uses: actions/hello-world-javascript-action@master
-      with: |
+      with:
         who-to-greet: 'JDA'
         wish: 'BlueYonder'
     - name: Get output
