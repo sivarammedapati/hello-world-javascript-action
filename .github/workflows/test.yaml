@@ -14,4 +14,4 @@ jobs:
     - name: Get output
       run: |
         echo "Time is ${{ steps.by.outputs.time }}"
-        echo "Time is ${{ steps.by.outputs.day }}"
+        echo "Day is ${{ steps.by.outputs.day }}"
