@@ -5,7 +5,7 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
-  wish:
+  wish-person:
     description: 'Wish the person'
     required: true
     default: 'Siva'

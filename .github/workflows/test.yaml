@@ -11,7 +11,7 @@ jobs:
       uses: actions/hello-world-javascript-action@master
       with:
         who-to-greet: 'JDA'
-        wish: 'BlueYonder'
+        wish-person: 'BlueYonder'
     - name: Get output
       run: |
         echo "Time is ${{ steps.by.outputs.time }}"
