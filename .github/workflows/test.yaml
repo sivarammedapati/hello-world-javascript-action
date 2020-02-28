@@ -1,0 +1,13 @@
+name: Custom Action
+on: [push]
+
+jobs:
+  job_101:
+    runs-on: ubuntu-latest
+    name: Job 101
+    steps:
+    - name: Get input
+      id: by
+      uses: actions/hello-world-javascript-action@master
+      with:
+        who-to-greet: 'BlueYonder'
