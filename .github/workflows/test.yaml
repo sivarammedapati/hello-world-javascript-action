@@ -10,7 +10,7 @@ jobs:
       id: by
       uses: actions/hello-world-javascript-action@master
       with:
-        who-to-greet: 'BlueYonder'
+        who-to-greet: 'JDA'
         wish: 'JDA'
     - name: Get output
       run: |
