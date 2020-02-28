@@ -9,9 +9,9 @@ jobs:
     - name: Get input
       id: by
       uses: actions/hello-world-javascript-action@master
-      with:
-        - who-to-greet: 'JDA'
-          wish: 'BlueYonder'
+      with: |
+        who-to-greet: 'JDA'
+        wish: 'BlueYonder'
     - name: Get output
       run: |
         echo "Time is ${{ steps.by.outputs.time }}"
