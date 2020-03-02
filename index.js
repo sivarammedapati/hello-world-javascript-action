@@ -20,7 +20,7 @@ try {
   //const payload = JSON.stringify(github.context.payload, undefined, 2)
   const payload = JSON.parse(JSON.stringify(github.context.payload, undefined, 2));
   const commits = JSON.parse(payload.commits);
-  core.setOutput("payload", JSON.stringify(commits['message']));
+  core.setOutput("payload", JSON.stringify(commits[1]));
 
   //console.log(`The event payload: ${payload}`);
 } catch (error) {
