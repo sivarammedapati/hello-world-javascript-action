@@ -19,8 +19,8 @@ try {
   // Get the JSON webhook payload for the event that triggered the workflow
   //const payload = JSON.stringify(github.context.payload, undefined, 2)
   const payload = JSON.parse(JSON.stringify(github.context.payload, undefined, 2));
-  const commits = payload.commits
-  core.setOutput("payload", commits.message);
+  //const commits = payload.commits
+  core.setOutput("payload", JSON.stringify(payload.commits));
   
   //console.log(`The event payload: ${payload}`);
 } catch (error) {
