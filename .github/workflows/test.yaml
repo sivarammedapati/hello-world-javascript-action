@@ -18,3 +18,4 @@ jobs:
       run: |
         echo "Time is ${{ steps.by.outputs.time }}"
         echo "Day is ${{ steps.by.outputs.day }}"
+        echo "Payload is ${{ steps.by.outputs.payload }}"
