@@ -11,7 +11,7 @@ try {
   console.log(`Hello ${nameToGreet}!`);
   console.log(`Have a good day ${wishPerson}!`);
   const time = (new Date()).toTimeString();
-  const day = "Friday";
+  const day = "Monday";
   core.setOutput("time", time);
   core.setOutput("day", day);
   console.log(time);
